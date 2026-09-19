@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alone, But Not Lost — Riva</title>
+  <meta name="description" content="Alone, But Not Lost by Riva — understanding solitude, finding yourself, and learning to be enough.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">RIVA</a>
+    <a class="nav-link" href="#book">The Book</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AN EBOOK BY RIVA</p>
+        <h1>Alone,<br><em>But Not Lost.</em></h1>
+        <p class="subtitle">Understanding solitude, finding yourself, and learning to be enough.</p>
+        <p class="intro">A quiet little book for the days when being alone feels heavier than usual — and for the moments when you are ready to understand yourself a little better.</p>
+        <div class="actions">
+          <a class="btn primary" href="#buy">Get the eBook — ₹199</a>
+          <a class="btn ghost" href="#inside">Explore the book</a>
+        </div>
+      </div>
+      <div class="cover-wrap">
+        <div class="cover">
+          <p class="cover-top">AN EBOOK BY RIVA</p>
+          <div class="cover-title">Alone,<br><span>But Not Lost</span></div>
+          <p class="cover-sub">Understanding Solitude,<br>Finding Yourself, and<br>Learning to Be Enough</p>
+          <div class="sun"></div>
+          <div class="mountain m1"></div>
+          <div class="mountain m2"></div>
+          <div class="person"></div>
+          <p class="cover-author">R I V A</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <p class="quote">“You are not behind.<br>You are becoming.”</p>
+    </section>
+
+    <section id="book" class="section two-col">
+      <div>
+        <p class="eyebrow dark">ABOUT THE BOOK</p>
+        <h2>Sometimes the quiet<br>has something to say.</h2>
+      </div>
+      <div class="text">
+        <p><strong>Alone, But Not Lost</strong> is a 15-page reflective eBook about aloneness, loneliness, overthinking, self-discovery and learning to enjoy your own company.</p>
+        <p>It isn't about becoming distant from everyone. It's about understanding that being alone doesn't mean being incomplete.</p>
+      </div>
+    </section>
+
+    <section id="inside" class="section inside">
+      <p class="eyebrow dark">INSIDE THE BOOK</p>
+      <h2>A few things you'll explore.</h2>
+      <div class="cards">
+        <article><span>01</span><h3>Aloneness vs. Loneliness</h3><p>Understand why being alone and feeling lonely aren't always the same thing.</p></article>
+        <article><span>02</span><h3>The Quiet Mind</h3><p>Look at overthinking, silence and the thoughts that appear when everything gets quiet.</p></article>
+        <article><span>03</span><h3>Your Relationship With Yourself</h3><p>Learn small ways to build self-respect and become comfortable in your own company.</p></article>
+        <article><span>04</span><h3>Finding Strength in Solitude</h3><p>Turn quiet moments into space for reflection, growth and self-discovery.</p></article>
+      </div>
+    </section>
+
+    <section class="letter">
+      <div class="letter-card">
+        <p class="eyebrow">A NOTE FROM RIVA</p>
+        <h2>For the person who feels alone.</h2>
+        <p>I know some days feel heavier than others. You can smile, reply to messages, finish your work, and still carry a quiet feeling nobody fully sees.</p>
+        <p>Be patient with yourself. You don't have to have everything figured out. Keep taking the next small step.</p>
+        <p class="signature">— Riva</p>
+      </div>
+    </section>
+
+    <section id="buy" class="buy">
+      <p class="eyebrow">YOUR NEXT CHAPTER</p>
+      <h2>You are still enough.</h2>
+      <p>Get the complete 15-page eBook and take a little time for yourself.</p>
+      <!-- Replace the # below with your payment/checkout link -->
+      <a class="btn primary large" href="#" onclick="showPaymentMessage(event)">Buy the eBook — ₹199</a>
+      <p class="secure">PDF • 15 pages • Instant digital product</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">RIVA</div>
+    <p>Alone, But Not Lost · © 2026 Riva</p>
+  </footer>
+
+  <div id="message" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button onclick="closeMessage()" aria-label="Close">×</button>
+      <h3>Payment link coming next</h3>
+      <p>Your website is ready. Add your UPI/payment checkout link to the Buy button, and customers can purchase the eBook.</p>
+      <p class="hint">Edit the <strong>href="#"</strong> in <strong>index.html</strong>.</p>
+    </div>
+  </div>
+
+  <script>
+    function showPaymentMessage(e) {
+      e.preventDefault();
+      document.getElementById('message').setAttribute('aria-hidden','false');
+    }
+    function closeMessage() {
+      document.getElementById('message').setAttribute('aria-hidden','true');
+    }
+  </script>
+</body>
+</html>
